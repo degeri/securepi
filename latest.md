@@ -80,7 +80,7 @@ Copy the certificate and config. `cp ~/.dcrd/{dcrd.conf,rpc.cert} ~/copytob`
 </details>
 <br>
 
-Make sure you are [verify](https://docs.decred.org/advanced/verifying-binaries/) the tar file.
+Make sure you [verify](https://docs.decred.org/advanced/verifying-binaries/) the tar file.
 
 
 Now you can tar the  `copytob` folder for transport.
@@ -91,7 +91,7 @@ You can also calculate the hash to ensure that the file is not modified while mo
 
 `sha256sum ~/copytob.tar.gz` 
 
-Note this down the output on an uneditable medium. ie: paper or a photograph.
+Store this output on an uneditable medium. ie: paper or a photograph.
 
 
 
@@ -141,13 +141,13 @@ For ease of use, let us make a folder called `bconfig` and copy it over.
 
 (You might need to use an admin or sudo permissions)
 
-eg (These will be diffirent for LiveUSB's)
+eg (These will be different for LiveUSB's)
 `sudo mkdir /media/{yourusername}/writable/bconfig`
 `sudo cp ~/copytob.tar.gz /media/{yourusername}/writable/bconfig`
 
 Now unmount the disk from your system. **This will be the last time you will ever connect this disk to a system with internet access.** 
 
-Now boot `Wallet-B` with the disk inserted **(DO NOT CONNECT YOUR ETHERNET CABLE)**. Depending on the OS it should show you a system setup and a default user creation menu, use proceed with a strong password. Then once the system is installed it should reboot.
+Now boot `Wallet-B` with the disk inserted **(DO NOT CONNECT YOUR ETHERNET CABLE)**. Depending on the OS it should show you a system setup and a default user creation menu, proceed with a strong password. Then once the system is installed it should reboot.
 
 
 Once logged in get familiar with the system, adjust the clock, etc, and then open a terminal.
