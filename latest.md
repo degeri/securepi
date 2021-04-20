@@ -16,7 +16,6 @@ This also assumes some general technical knowledge and that you can fix any hitc
 
 Read [this](https://docs.decred.org/advanced/general-security/) before proceeding
 
-
 ## The setup:
 
 This will be a multi-system setup.
@@ -27,6 +26,13 @@ This will be a multi-system setup.
 * A general laptop or desktop that will be running the node. Referred as (`Computer A`)
 * A secure system that will be running our wallet for which we will be using a RaspberryPi4 device (It can be another laptop too).  Referred as (`Wallet-B`). This system should also be connected to an external monitor and keyboard. It should also connect to the local network via ethernet.
 * All details/commands that come within curly braces `{}` cannot be copy-pasted, you will need to remove the curly braces and edit them to suit your setup.
+
+### Benefits of this setup
+
+* The wallet `Wallet-B` is kept offline and turned off most of the time. This allows greatly reduces attack surface/opportunity. 
+* An attacker would first have to compromise the dcrd on `Computer A` and find a way to jump into `Wallet-B` using the RPC to both compromise and exfiltrate data. This is highly unlikely and difficult to pull off.
+* dcrd on `Computer A` can be used for other purposes in your local network (eg. other wallets, DEX, VSPD, etc), so you don't need to maintain multiple dcrd instances within your local network.
+
 
 ## Setting up Computer A:
 
